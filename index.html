@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>pizza.io</title>
+        <script defer src="src/index.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>pizza.io</h1>
+        <h2>a chaotic place to generate pizza toppings</h2>
+        <blockquote><div id="settings">
+            <form>
+                <label for="n-toppings">Number of toppings (min: 0, max: 34):</label><br>
+                <input type="number" id="n-toppings" name="n-toppings" min="0" value="5"><br>
+                <label for="n-sauces">Number of sauces (min: 1, max: 8):</label><br>
+                <input type="number" id="n-sauces" name="n-sauces" min="1" max="8" value="1"><br>
+                <label for="n-cheeses">Number of cheeses (min: 1, max: 8):</label><br>
+                <input type="number" id="n-cheeses" name="n-cheeses" min="1" max="8" value="1"><br>
+                <label for="n-finishing-sauces">Number of finishing sauces (min: 0, max: 8):</label><br>
+                <input type="number" id="n-finishing-sauces" name="n-finishing-sauces" min="0" max="8" value="1"><br><br>
+            </form>
+        </div>
+        <div id="main" class="main">
+            <button id= "randomize-button">Randomize Toppings 🍕</button><br><br>
+
+            <div id="results">
+
+            </div>
+
+        </div></blockquote>
+    </body>
+</html>
